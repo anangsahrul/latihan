@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tugas Uas</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Detail_Hotel"></string>
+    <string-array name="dtl_spiner">
+        <item>1 hari</item>
+        <item>2 hari</item>
+        <item>3 hari</item>
+    </string-array>
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail_Hotel">
+
+    <ImageView
+        android:id="@+id/dtl_gambar"
+        android:layout_width="412dp"
+        android:layout_height="224dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gambarhotel" />
+
+    <TextView
+        android:id="@+id/dtl_promo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="3dp"
+        android:text="PROMO HARI INI"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/dtl_nama_hotel"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/dtl_nama_hotel"
+        app:layout_constraintTop_toBottomOf="@+id/dtl_nama_hotel" />
+
+    <TextView
+        android:id="@+id/dtl_hargapromo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="Rp.2100.000"
+        android:textColor="@color/colormerah"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/dtl_promo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/dtl_promo"
+        app:layout_constraintTop_toBottomOf="@+id/dtl_promo" />
+
+    <TextView
+        android:id="@+id/dtl_hargapas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="Rp1700.000"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/dtl_hargapermalam"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/dtl_hargapermalam"
+        app:layout_constraintTop_toBottomOf="@+id/dtl_hargapermalam" />
+
+    <TextView
+        android:id="@+id/dtl_hargapermalam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="Harga permalam"
+        android:textColor="@color/wa"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/dtl_hargapromo"
+        app:layout_constraintTop_toBottomOf="@+id/dtl_hargapromo" />
+
+    <Button
+        android:id="@+id/dtl_pesan"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/rounded_button"
+        android:text="PESAN SEKARANG"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.819"
+        app:layout_constraintStart_toStartOf="@+id/dtl_hargapas" />
+
+    <TextView
+        android:id="@+id/dtl_nama_hotel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="Jakarta Center"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dtl_gambar" />
+
+    <Spinner
+        android:id="@+id/dtl_spiner"
+        android:layout_width="119dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="8dp"
+        android:entries="@array/dtl_spiner"
+        app:layout_constraintBottom_toBottomOf="@+id/dtl_pili_hari"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dtl_pili_hari" />
+
+    <TextView
+        android:id="@+id/dtl_pili_hari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="8dp"
+        android:text="Pilih Hari"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dtl_hargapermalam"
+        app:layout_constraintEnd_toStartOf="@+id/dtl_spiner"
+        app:layout_constraintStart_toEndOf="@+id/dtl_hargapermalam"
+        app:layout_constraintTop_toTopOf="@+id/dtl_hargapermalam" />
+
+</android.support.constraint.ConstraintLayout>
